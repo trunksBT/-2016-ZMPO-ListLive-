@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 3.5.1)
+cmake_minimum_required(VERSION 2.6)
 project(Stack)
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
@@ -8,7 +8,7 @@ set(IMPLEMENTATION
 	Stack.cpp
 )
 
-source_group("src" FILES ${IMPLEMENTATION})
+source_group("Implementation" FILES ${IMPLEMENTATION})
 add_executable(${PROJECT_NAME} 
 	Main.cpp
 	${IMPLEMENTATION}
